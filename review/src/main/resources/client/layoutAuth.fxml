@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Auth">
+   <children>
+      <Button fx:id="btnSignIn" layoutX="135.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#onClickSignIn" text="Sign In" />
+      <Button fx:id="btnRegistration" layoutX="222.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#onClickRegistration" text="Registration" />
+      <PasswordField fx:id="passwordField" layoutX="135.0" layoutY="165.0" />
+      <TextField fx:id="textFieldSignIn" layoutX="135.0" layoutY="104.0" />
+      <Label layoutX="135.0" layoutY="77.0" text="Login" />
+      <Label layoutX="135.0" layoutY="137.0" text="Password" />
+      <TextField fx:id="textFieldNick" layoutX="135.0" layoutY="231.0" visible="false" />
+      <Label fx:id="labelNick1" layoutX="136.0" layoutY="200.0" text="Nick" visible="false" />
+      <Label fx:id="labelNick2" layoutX="168.0" layoutY="203.0" text="(Enter and click 'Registration' again)" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelWrongLoginOrPass" layoutX="133.0" layoutY="233.0" text="Wrong login or password!" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
