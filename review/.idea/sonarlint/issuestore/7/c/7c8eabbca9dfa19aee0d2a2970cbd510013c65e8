@@ -1,0 +1,4 @@
+
+n	java:S131"YComplete cases by adding the missing enum constants or add a default case to this switch.(Å«¬Ê
+‚
+java:S1130'"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ÈèžÝ
