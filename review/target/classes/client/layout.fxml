@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Client">
+   <children>
+      <ListView fx:id="listViewClient" layoutX="37.0" layoutY="80.0" onMouseClicked="#onClickedNewDirectoryClientListener" prefHeight="245.0" prefWidth="164.0" editable="true"/>
+      <ListView fx:id="listViewServer" layoutX="272.0" layoutY="79.0" onMouseClicked="#onClickedNewDirectoryServerListener" prefHeight="246.0" prefWidth="164.0" />
+      <Label layoutX="105.0" layoutY="25.0" text="Client" />
+      <Label layoutX="338.0" layoutY="25.0" text="Server" />
+      <Button fx:id="btnSendToClient" layoutX="222.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#btnSendToClientOnClick" prefHeight="31.0" prefWidth="37.0" text="&lt;-" />
+      <Button fx:id="btnSendToServer" layoutX="222.0" layoutY="113.0" mnemonicParsing="false" onMouseClicked="#btnSendToServerOnClick" text="-&gt;" />
+      <TextField fx:id="pathClientTextField" editable="false" layoutX="38.0" layoutY="43.0" prefHeight="26.0" prefWidth="139.0" />
+      <Button layoutX="179.0" layoutY="43.0" mnemonicParsing="false" onMouseClicked="#btnUndoClientOnClicked" prefHeight="26.0" prefWidth="19.0" text="↑" />
+      <TextField fx:id="pathServerTextField" editable="false" layoutX="273.0" layoutY="43.0" prefHeight="26.0" prefWidth="139.0" />
+      <Button layoutX="414.0" layoutY="43.0" mnemonicParsing="false" onMouseClicked="#btnUndoServerOnClicked" prefHeight="26.0" prefWidth="22.0" text="↑" />
+      <Button fx:id="btnDelete" layoutX="222.0" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#btnDeleteOnClick" prefHeight="31.0" prefWidth="37.0" text="Х" />
+   </children>
+</AnchorPane>
